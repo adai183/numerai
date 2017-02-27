@@ -77,18 +77,12 @@ def main():
     def Model():
         # create model
         model = Sequential()
-        model.add(Dense(500, input_dim=50, init='normal', activation='relu'))
-        model.add(Dropout(.5))
+        model.add(Dense(1000, input_dim=50, init='normal', activation='relu'))
+        model.add(Dense(500, init='normal', activation='relu'))
         model.add(Dense(250, init='normal', activation='relu'))
-        model.add(Dropout(.2))
-        model.add(Dense(150, init='normal', activation='relu'))
-        model.add(Dropout(.2))
         model.add(Dense(100, init='normal', activation='relu'))
-        model.add(Dropout(.2))
-        model.add(Dense(50, init='normal', activation='relu'))
-        model.add(Dropout(.2))
         model.add(Dense(10, init='normal', activation='relu'))
-        model.add(Dropout(.5))
+        model.add(Dropout(.3))
         model.add(Dense(1, init='normal', activation='sigmoid'))
         # Compile model
         model.compile(loss='binary_crossentropy',
