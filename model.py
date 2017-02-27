@@ -115,7 +115,7 @@ def main():
         X,
         Y,
         batch_size=1000,
-        nb_epoch=150,
+        nb_epoch=1500,
         shuffle=True,
         validation_split=0.2,
         callbacks=[ModelCheckpoint('model.h5',
