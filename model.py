@@ -80,11 +80,11 @@ def main():
         model.add(Dense(2000, input_dim=50, init='normal', activation='relu'))
         model.add(Dense(1000, init='normal', activation='relu'))
         model.add(Dense(500, init='normal', activation='relu'))
-        model.add(Dropout(.4))
+        model.add(Dropout(.5))
         model.add(Dense(100, init='normal', activation='relu'))
-        model.add(Dropout(.4))
+        model.add(Dropout(.5))
         model.add(Dense(10, init='normal', activation='relu'))
-        model.add(Dropout(.4))
+        model.add(Dropout(.6))
         model.add(Dense(1, init='normal', activation='sigmoid'))
         # Compile model
         model.compile(loss='binary_crossentropy',
