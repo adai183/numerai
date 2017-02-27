@@ -121,7 +121,7 @@ def main():
     model.fit(
         X,
         Y,
-        batch_size=2000,
+        batch_size=128,
         nb_epoch=100,
         shuffle=True,
         validation_split=0.2,
