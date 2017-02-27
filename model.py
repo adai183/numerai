@@ -81,6 +81,7 @@ def main():
         model.add(Dense(500, init='normal', activation='relu'))
         model.add(Dense(250, init='normal', activation='relu'))
         model.add(Dense(100, init='normal', activation='relu'))
+        model.add(Dropout(.3))
         model.add(Dense(10, init='normal', activation='relu'))
         model.add(Dropout(.3))
         model.add(Dense(1, init='normal', activation='sigmoid'))
